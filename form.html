@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ADA Feedback</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style1.css">
+    
+</head>
+<body>
+
+
+<h1 id="ada">ADA </h1><h1>Students feedback</h1>
+<div id="container">
+
+<div style="background-color: #CFDEF3" id="wwy">
+<img src="res/uncle-sam-we-want-you1-kopie_1.png">
+  <h4> To give us feedback, because this course is made for you! Because it's all about you!</h4>
+  Fill this form if you:
+  <p>
+  - Find an error in the content or in the quizzes<br>
+  - Have a feedback about instructors or the experience<br>
+  - Have a suggestion on how to make the course better<br>
+</p>
+</div>
+<div id=feedback>    
+  <h2>Email us</h2>
+ <form id="contactForm">
+    
+    <div class="form-group" id="name">
+    <p id="p-name">Name</p>    
+    <input type="text" name="Username" class="form-control" id="nom">
+            </div>
+
+  <!-- <div class="form-group">
+  <p class="name">Track</p>
+  <select >
+        <option value="Game">Game</option>
+        <option value="Web">Web</option>
+        <option value="AI">AI</option>
+  </select>
+  </div> -->
+     
+<br>
+
+<div class="form-group" id="slide-name">
+<p>Slide name (or object)</p>
+<input type="text" name="slide" class="form-control" id="slide" required>
+<br>
+</div>
+
+<br>
+
+<div class="form-group" id="critique">
+<p>Message</p>
+<input type="text" name="msg" class="form-control" id="msg">
+<br>
+</div>
+<br>
+<input type="submit" value="Submit" id="submit">
+
+
+</form>
+</div>
+
+</div>
+<script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyB6yE7KwH78vRbTucqwjRgHnTlFRZ-Y9f8",
+    authDomain: "allilouy-1be17.firebaseapp.com",
+    databaseURL: "https://allilouy-1be17.firebaseio.com",
+    projectId: "allilouy-1be17",
+    storageBucket: "allilouy-1be17.appspot.com",
+    messagingSenderId: "718913944337"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>
